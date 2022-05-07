@@ -20,6 +20,8 @@ useEffect(()=>{
 //   console.log(state)
 // },[state])
 
+
+
 const getdata = ()=>{
   axios.get(`https://api.instantwebtools.net/v1/passenger?page=${page}&size=1000`).then((res)=>{
     setState(res.data.data);
@@ -27,7 +29,7 @@ const getdata = ()=>{
  //   console.log(state)
   })
 }
-//console.log(state[0].data)
+console.log(state[0].data)
 
 const scrolltoend=()=>{
   setPage(page+1)
